@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1 class='h1'>Users!</h1>
+        <table class="table table-bordered">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Fullname</th>
+            </tr>
+                {% for student in students %}
+            <tr>
+                <th>{{ student['first_name'] }}</th>
+                <th>{{ student['last_name'] }}</th>
+                <th>{{ student['first_name'] }}  {{ student['last_name'] }}</th>
+                {% endfor %}
+            </tr>
+        </table>
+    </body>
+</html>
